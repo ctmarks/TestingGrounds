@@ -31,3 +31,7 @@ void UPatrolRoute::TickComponent(float DeltaTime, ELevelTick TickType, FActorCom
 	// ...
 }
 
+TArray<AActor*> UPatrolRoute::GetPatrolPoints() const
+{
+	return PatrolPointsCPP;
+}
