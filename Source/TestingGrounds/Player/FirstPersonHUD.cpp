@@ -1,13 +1,13 @@
 // Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
 
-#include "TestingGroundsHUD.h"
+#include "FirstPersonHUD.h"
 #include "Engine/Canvas.h"
 #include "Engine/Texture2D.h"
 #include "TextureResource.h"
 #include "CanvasItem.h"
 #include "UObject/ConstructorHelpers.h"
 
-ATestingGroundsHUD::ATestingGroundsHUD()
+AFirstPersonHUD::AFirstPersonHUD()
 {
 	// Set the crosshair texture
 	static ConstructorHelpers::FObjectFinder<UTexture2D> CrosshairTexObj(TEXT("/Game/Player/Textures/FirstPersonCrosshair"));
@@ -15,7 +15,7 @@ ATestingGroundsHUD::ATestingGroundsHUD()
 }
 
 
-void ATestingGroundsHUD::DrawHUD()
+void AFirstPersonHUD::DrawHUD()
 {
 	Super::DrawHUD();
 
